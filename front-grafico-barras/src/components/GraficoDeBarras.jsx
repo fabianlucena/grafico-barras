@@ -2,10 +2,13 @@ import { useState, useEffect } from 'react';
 import { BarChart } from '@mui/x-charts';
 
 export default function GraficoDeBarras() {
-  const [data, setData] = useState([4, 1, 6]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    setData(data => [...data, 7]);
+    fetch('http://localhost:3000/datos/grafico-barras')
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error('Error fetching data:', error));
   }, []);
 
   return <BarChart

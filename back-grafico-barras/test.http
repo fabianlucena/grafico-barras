@@ -1,1 +1,5 @@
 GET  http://localhost:3000/datos/grafico-barras
+
+###
+
+GET  http://localhost:3000/datos/grafico-barras-01
