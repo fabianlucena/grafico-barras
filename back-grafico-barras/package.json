@@ -1,0 +1,24 @@
+{
+  "name": "back-grafico-barras",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/fabianlucena/grafico-barras#readme",
+  "bugs": {
+    "url": "https://github.com/fabianlucena/grafico-barras/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabianlucena/grafico-barras.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
